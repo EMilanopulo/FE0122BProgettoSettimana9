@@ -1,0 +1,25 @@
+<div class="nav">
+  <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Todos</a>
+  <a [routerLink]="['/completati']" routerLinkActive="active">Completati</a>
+</div>
+
+<div id="input">
+  <ng-container *ngIf="tasks; else elseTemplate">
+  <ul>
+    <li id="ins">Ops! Non ci sono Task</li>
+    <li id="task" *ngFor="let task of tasks; let i = index">
+      - {{task.title}}
+      <button id="complet" (click)="completeTask(task, i)">ok</button>
+      <button id="rimuovi" (click)="cancelTask(task, i)">x</button>
+  </li>
+  </ul>
+
+  <input type="text" [(ngModel)]="newTaskTitle" placeholder="Aggiungi una task ..." id="task">
+  <button type="button" id="add" (click)="addTask()">+</button>
+</ng-container>
+<ng-template #elseTemplate>
+<p>Recupero Tasks...</p>
+</ng-template>
+</div>
+
+

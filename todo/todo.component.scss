@@ -1,0 +1,75 @@
+#input{
+  position: absolute;
+  top: 50%;
+  left: 40vw;
+}
+
+#input input{
+  width: 310px;
+  height: 40px;
+  font-size: 1.1em;
+  padding: 5px 10px;
+}
+
+#input p{
+  text-align: center;
+  font-size: 1.6em;
+}
+
+#input button {
+  width: 53px;
+  height: 54px;
+  font-size: 1.1em;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+#input div {
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ins {
+  list-style: none;
+  font-size: 1.6em;
+}
+
+#task{
+  list-style: none;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+
+#task button{
+ font-size: 0.6em;
+ width: 40px;
+ height: 40px;
+ border-radius: 10px;
+}
+
+#task #complet{
+  background-color: rgb(41, 182, 41);
+  color: white;
+  margin-left: 15px;
+}
+
+#task #rimuovi{
+  background-color: rgb(216, 47, 47);
+  color: white;
+}
+
+#input p {
+  display: block;
+  margin-left: 100px;
+}
+
+#input{
+
+  @media screen and (max-width:1230px) {
+    position: absolute;
+    top: 50%;
+    left: 30vw;
+  }
+
+}

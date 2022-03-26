@@ -1,0 +1,25 @@
+#input{
+  position: absolute;
+  top: 50%;
+  left: 43vw;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+#task{
+  list-style: none;
+}
+
+#input p {
+  display: block;
+  margin-left: 50px;
+}
+
+#input{
+
+  @media screen and (max-width:1230px) {
+    position: absolute;
+    top: 50%;
+    left: 30vw;
+  }
+}

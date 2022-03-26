@@ -1,0 +1,18 @@
+<div class="nav">
+  <a [routerLink]="['/']" routerLinkActive="active">Todos</a>
+  <a [routerLink]="['/completati']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Completati</a>
+</div>
+
+<div id="input">
+  <ng-container *ngIf="tasks; else elseTemplate">
+<ul>
+  <li id="task" *ngFor="let task of tasks; let i = index">
+    - {{task.title}}
+  </li>
+</ul>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>Recupero Tasks...</p>
+  </ng-template>
+</div>
+
